@@ -1,12 +1,23 @@
 <body id="sheet" class="container">
-  <form class="sheet">
+  <form class="sheet grid">
     <fieldset>
-      <legend>Basic Info</legend>
+      <img
+        class="container"
+        src="http://lorempixel.com.br/150/150"
+        alt="Character Image"
+      />
 
-      <div id="imgage">
-        <img src="" alt="charImage" />
+      <div class="charStatus">
+        <label for="hitpoints">H.P<br /></label>
+        <input id="hitpoints" type="number" />
+        <input id="hitpoints" type="number" />
+
+        <label for="manapoints"><br />M.P<br /></label>
+        <input id="manapoints" type="number" />
+        <input id="manapoints" type="number" />
       </div>
-      <input type="file" accept="image/*" onchange="loaderFile(event)" />
+    </fieldset>
+    <fieldset class="basicChar">
       <label for="name">Nome</label>
       <input id="name" type="text" />
 
@@ -19,6 +30,5 @@
       <label for="align">Alinhamento</label>
       <input id="align" type="text" />
     </fieldset>
-    <input type="submit" value="Enviar" />
   </form>
 </body>

@@ -66,15 +66,13 @@ nav {
   width: 100%;
 }
 
-nav.menu{
-  display: flex;
-  width: 100%;
-}
-
-
 nav ul {
   text-align: center;
-  display: inline-flex;
+  display: inline-flex;;
+}
+
+nav .title {
+  font-family: var(--title-font);
 }
 
 /* ===== SHEET ================================================= */
@@ -83,14 +81,36 @@ nav ul {
   display: flex;
 }
 
-/* .sheet.grid {
-  display: grid;
-  justify-self: center;
+/* fieldset {
+  border: none;
 } */
+
+/* #image {
+  display: flex;
+} */
+
+form.grid {
+  grid-template-columns: 1fr 4fr;
+  gap: 1rem;
+}
+
+input[type='number']{
+  width: 48%;
+} 
+
+.charStatus {
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 
 /* ===== Char Image ================================================= */
 
-.charImage {
-  display: flex;
-  
+img.container{
+  margin-top: 1.3rem;
 }
